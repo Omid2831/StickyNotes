@@ -5,11 +5,19 @@ body {
 }
 
 #parent {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin: 1.5rem;
   background-color: rgb(8, 191, 191);
   width: 650px;
   height: 650px;
+
+  border: 2px solid white;
+  backdrop-filter: blur(10px);
+  background: rgb(73, 179, 198);
 }
+
 #child {
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
@@ -26,13 +34,14 @@ body {
   height: 50%;
   transition: transform 1s ease-in-out;
 }
-#box {
-  font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
-  font-size: 6rem;
-  -webkit-filter: url(#box);
-  filter: url(#box);
-}
 #child2 {
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: drop-shadow(10px);
+
+  box-shadow: 10px 20px 20px rgb(96, 96, 96);
+
   justify-content: center;
   display: flex;
 
@@ -40,21 +49,90 @@ body {
   width: 50%;
   height: 50%;
 
-  transition: transform 1s linear;
+  transition: transform 1s ease-in-out;
+}
+#child3 {
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: drop-shadow(10px);
+
+  box-shadow: 10px 20px 20px rgb(96, 96, 96);
+
+  justify-content: center;
+  display: flex;
+
+  background-color: #b11fc1;
+  width: 50%;
+  height: 50%;
+
+  transition: transform 1s ease-in-out;
+}
+#child4 {
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: drop-shadow(10px);
+
+  box-shadow: 10px 20px 20px rgb(96, 96, 96);
+
+  justify-content: center;
+  display: flex;
+
+  background-color: #c11f50;
+  width: 50%;
+  height: 50%;
+
+  transition: transform 1s ease-in-out;
+}
+
+#box {
+  font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  font-size: 6rem;
+  -webkit-filter: url(#box);
+  filter: url(#box);
 }
 #box2 {
   font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
   font-size: 6rem;
+  -webkit-filter: url(#box2);
+  filter: url(#box2);
+}
+#box3 {
+  font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  font-size: 6rem;
+  -webkit-filter: url(#box2);
+  filter: url(#box2);
+}
+#box4 {
+  font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  font-size: 6rem;
+  -webkit-filter: url(#box2);
+  filter: url(#box2);
 }
 
 #parent:hover #child {
   background-color: #ac2424;
   transform: translateX(100%) translateY(100%) rotate(40deg);
-  backdrop-filter: brightness(150%);
-  text-shadow: 2px 2px #e6c4c4;
+  backdrop-filter: brightness(130%);
+  text-shadow: 2px 2px #c1f9e7;
 }
 
 #parent:hover #child2 {
   background-color: cadetblue;
-  transform: translateX(-100%) translateY(-100%) rotate(40deg);
+  transform: translateX(100%) translateY(-100%) rotate(60deg);
+  backdrop-filter: brightness(130%);
+  text-shadow: 2px 2px #c1f9e7;
+}
+#parent:hover #child3 {
+  background-color: rgb(95, 160, 112);
+  transform: translateX(-100%) translateY(100%) rotate(-40deg);
+  backdrop-filter: brightness(130%);
+  text-shadow: 2px 2px #c1f9e7;
+}
+#parent:hover #child4 {
+  background-color: rgb(131, 120, 229);
+  transform: translateX(-100%) translateY(-100%) rotate(-60deg);
+  backdrop-filter: brightness(130%);
+  text-shadow: 2px 2px #c1f9e7;
 }
