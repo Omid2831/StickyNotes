@@ -25,20 +25,20 @@
   font-size: 6rem;
   -webkit-filter: url(#box);
   filter: url(#box);
-
 }
-#child2
-{
+#child2 {
+  justify-content: center;
+  display: flex;
 
-    justify-content: center;
-    display: flex;
+  background-color: #1fc1a3;
+  width: 50%;
+  height: 50%;
 
-    background-color: #1fc1a3;
-    width: 50%;
-    height: 50%;
-    
-    transition: transform 1s ease-in-out;
-
+  transition: transform 1s linear;
+}
+#box2 {
+  font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  font-size: 6rem;
 }
 
 #parent:hover #child {
@@ -48,8 +48,7 @@
   text-shadow: 2px 2px #e6c4c4;
 }
 
-#parent:hover #child2{
-    background-color: cadetblue;
-    transform: translateX(-100%) translateY(-100%)  rotate(40deg);
-
+#parent:hover #child2 {
+  background-color: cadetblue;
+  transform: translateX(-100%) translateY(-100%) rotate(40deg);
 }
