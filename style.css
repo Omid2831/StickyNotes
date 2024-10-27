@@ -138,6 +138,7 @@ body {
   background: #eee;
 }
 .card {
+  
   border: 1px solid #F00;
   background-color: #FFF;
   width: 325px;
@@ -145,7 +146,13 @@ body {
   position: absolute;
   transition: all 1.5s ease-in-out;
 }
-
+#NameBoxContainer{
+  justify-content: center;
+  display : flex;
+  padding-top: 3em;
+  font-family: Impact, "Haettenschweiler", "Arial Narrow Bold", sans-serif;
+  font-size: 2.2rem;
+}
 .topLeft {
   top: 0;
   left: 0;
