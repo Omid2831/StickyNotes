@@ -135,7 +135,9 @@ body {
   position: relative;
   width: 650px;
   height: 650px;
-  background: #eee;
+  
+  background: #adb3b0;
+  transition: background-color 3s ease-in-out;
 }
 .card {
   
@@ -163,4 +165,10 @@ body {
   top: 325px;
   left: 325px;
   rotate:45deg;
+}
+
+.container:hover {
+  background-color: rgb(151, 218, 206);
+transition-duration:  3s ;
+
 }
