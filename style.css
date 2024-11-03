@@ -1,13 +1,46 @@
 body {
-  background-color: rgb(151, 218, 206);
+  background-color: rgb(117, 117, 117);
   justify-content: center;
   display: grid;
   flex-direction: column;
+  
+  
 }
+#head{
+  text-align: center;
+  font-size: 3rem;
+  /*Adding  a background color to the header*/
 
+  background-image: linear-gradient(45deg, #f3626b, #2f48ad, #a25bf2, #a58420);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: head 3s ease-in-out infinite
+}
+@keyframes head {
+  0% {
+     filter: hue-rotate(0deg);
+  }
+  100% {
+     filter: hue-rotate(360deg);
+  }
+}
+#head2{
+  text-align: center;
+  font-size: 1.5rem;
+
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 0px 10px cyan,
+  0px  0px 20px cyan,
+  0px 0px 40px cyan,
+  0px 0px 80px cyan;
+  
+
+
+}
 #parent {
   display: flex;
   flex-direction: column;
+ 
   flex-wrap: wrap;
   margin: 1.5rem;
   background-color: rgb(8, 191, 191);
@@ -168,7 +201,7 @@ body {
 }
 
 .container:hover {
-  background-color: rgb(151, 218, 206);
-transition-duration:  3s ;
+  background-color:rgb(117, 117, 117);
+  transition-duration:  3s ;
 
 }
